@@ -12,3 +12,7 @@ services:
      environment: 
       - ALLOW_EMPTY_PASSWORD=yes
      restart: always
+
+  largeimage:
+    image: slightlytyler/large-image-test
+    restart: always
