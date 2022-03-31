@@ -6,7 +6,7 @@ services:
      ports:
        - "8000:80"
      restart: always
-     volume: 
+     volumes: 
        - bin:/usr/src/wordpress
 
    redis:
