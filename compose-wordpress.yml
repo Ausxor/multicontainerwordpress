@@ -6,13 +6,11 @@ services:
      ports:
        - "8000:80"
      restart: always
+     volume: 
+       - bin:/usr/src/wordpress
 
    redis:
      image: mcr.microsoft.com/oss/bitnami/redis:6.0.8
      environment: 
       - ALLOW_EMPTY_PASSWORD=yes
      restart: always
-
-  largeimage:
-    image: slightlytyler/large-image-test
-    restart: always
